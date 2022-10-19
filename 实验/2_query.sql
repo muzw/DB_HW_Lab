@@ -63,4 +63,31 @@ SELECT COUNT(DISTINCT title) FROM titles;
 SELECT payterms,COUNT(qty) FROM sales GROUP BY payterms;
 
 -- 5．得到排序的查询结果
+-- 查找作者的姓、名、电话号码，并按作者姓、名排列
+SELECT au_lname,au_fname,phone FROM authors ORDER BY au_lname,au_fname;
+ 
+-- 查找书名和书的价格，按书价由大到小的次序排列
+SELECT title,price FROM titles ORDER BY price DESC;
 
+-- 列出烹调书（类别名含有 cook）的种类和该类的平均价格
+SELECT type,AVG(price) FROM titles WHERE type LIKE '%cook%' GROUP BY type;
+
+-- 对其他样例表构造查询条件、排序要求，给出查询结果
+-- 以递增的方式列出sales表中各个支付方式的总销量
+SELECT payterms,SUM(qty) 销量总合 FROM sales GROUP BY payterms ORDER BY SUM(qty);
+
+-- 6. 用嵌套或连接进行查询
+-- 使用样例表 titles, publishers 进行查询: 查找出版社的名称以及所出的书名
+SELECT pub_name,title FROM titles NATURAL JOIN publishers;
+
+-- 使用样例表 authors, titleauthor, titles 进行查询: 查找作者的姓、名和所写的书名
+SELECT au_lname,au_fname,title FROM titles NATURAL JOIN authors NATURAL JOIN titleauthor;
+
+-- 从 titles,sales 中找出定单量(qty)最大的那一行定单的书的书名、价格、定单量
+SELECT title,price,qty FROM titles NATURAL JOIN sales ORDER BY qty DESC LIMIT 1;
+SELECT title,price,qty FROM titles NATURAL JOIN sales WHERE qty = (SELECT MAX(qty) FROM sales);
+
+-- 构造其他条件，在 sales 和 stores 样例表中进行连接或嵌套查询
+-- 查询Bookbeat商店卖出的书的书号和销量
+SELECT title_id,qty FROM sales WHERE stor_id IN (SELECT stor_id FROM stores WHERE stor_name = 'Bookbeat');
+SELECT title_id,qty FROM sales NATURAL JOIN stores WHERE stor_name = 'Bookbeat';
