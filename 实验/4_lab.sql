@@ -45,16 +45,19 @@ UPDATE spb20051061 SET 仓库号=4 WHERE
 --    给定的百分制成绩，输出其 GPA 绩点和等级成绩。输入参数为百分制成绩，
 --    返回参数为绩点、等级成绩。如输出成绩不在 0~100 直接，存储过程返回
 --    -1，否则返回 0
-CREATE OR REPLACE PROCEDURE PB20051061()
---(IN grade FLOAT,OUT gpa FLOAT ,OUT degree VARCHAR(2))
+CREATE OR REPLACE FUNCTION PB20051061
+(IN score NUMERIC(3),OUT gpa NUMERIC(3,1), OUT degree CHAR(2))
+RETURNS INTEGER
 LANGUAGE plpgsql
 AS $$
 BEGIN
-  raise 'Hello';
+  IF score<0 OR score>100 THEN
+    RETURN -1;
+  END IF;
+  SELECT jd,djcj FROM public.cjdzb 
+  WHERE score BETWEEN startfz and endfz INTO gpa,degree;
+  RETURN 0;
 END;
 $$;
-
-DROP PROCEDURE PB20051061();
-CALL PB20051061();
-
+/
 
