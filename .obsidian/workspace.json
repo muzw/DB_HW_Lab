@@ -1,0 +1,141 @@
+{
+  "main": {
+    "id": "140cb87b88bbaeb2",
+    "type": "split",
+    "children": [
+      {
+        "id": "57ea880028522266",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "2967784dba570fe6",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "章节作业/数据库作业.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "637105970fddd3e2",
+    "type": "split",
+    "children": [
+      {
+        "id": "55c002fe4b17745c",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "1657348a7854ea18",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "2bb2474250a37f02",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "79e5ffbf5d5ddfe3",
+            "type": "leaf",
+            "state": {
+              "type": "starred",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "4b9caf088051ee1a",
+    "type": "split",
+    "children": [
+      {
+        "id": "2b6e463524a4c670",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "7b6058389c864136",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "章节作业/数据库作业.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "baaf96144d56fc36",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "章节作业/数据库作业.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "fe90ebc5814b82fd",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "26a92a08cea2f462",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "章节作业/数据库作业.md"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "active": "2967784dba570fe6",
+  "lastOpenFiles": []
+}
