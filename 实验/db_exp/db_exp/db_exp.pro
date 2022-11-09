@@ -1,6 +1,6 @@
 #-------------------------------------------------
 #
-# Project created by QtCreator 2022-10-21T23:34:12
+# Project created by QtCreator 2022-11-08T20:23:51
 #
 #-------------------------------------------------
 
@@ -8,7 +8,7 @@ QT       += core gui sql
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
-TARGET = dbapplication
+TARGET = db_exp
 TEMPLATE = app
 
 # The following define makes your compiler emit warnings if you use
@@ -26,17 +26,19 @@ DEFINES += QT_DEPRECATED_WARNINGS
 SOURCES += \
         main.cpp \
         mainwindow.cpp \
-    connect_db.cpp \
-    secondwindow.cpp
+    page_login.cpp
 
 HEADERS += \
         mainwindow.h \
-    connect_db.h \
-    secondwindow.h
+    page_login.h
 
 FORMS += \
         mainwindow.ui \
-    secondwindow.ui
+    page_login.ui
 
 RESOURCES += \
-    C:/Users/Aweary/Desktop/library_managment/asserts/res.qrc
+    ../asserts/res.qrc
+
+DISTFILES += \
+    ../asserts/login_icon.jpg \
+    ../asserts/lib_management_icon.png

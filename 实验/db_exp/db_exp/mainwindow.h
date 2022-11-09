@@ -2,9 +2,13 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
+#include <page_login.h>
 #include <QSqlDatabase>
-#include <connect_db.h>
-#include <secondwindow.h>
+#include <QSqlQueryModel>
+#include <QTableView>
+#include <QSqlQuery>
+
+
 namespace Ui {
 class MainWindow;
 }
@@ -16,17 +20,19 @@ class MainWindow : public QMainWindow
 public:
     explicit MainWindow(QWidget *parent = 0);
     ~MainWindow();
-    bool SignIn();
 
-public slots:
-    void on_SignInBtn_clicked();
+private slots:
+    void on_CloseBtn_clicked();
 
-    void on_SignInBtn_clicked(bool checked);
+    void on_RunBtn_clicked();
 
 private:
     Ui::MainWindow *ui;
+
+    Page_login dlgLogin;
+
     QSqlDatabase db;
-    Connect_DB  cnect_db;
+
 };
 
 #endif // MAINWINDOW_H

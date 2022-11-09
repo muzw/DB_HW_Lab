@@ -32,7 +32,7 @@ class Ui_MainWindow
 public:
     QWidget *centralWidget;
     QPushButton *SignInBtn;
-    QWidget *widget;
+    QWidget *layoutWidget;
     QVBoxLayout *verticalLayout;
     QHBoxLayout *horizontalLayout;
     QLabel *label;
@@ -49,6 +49,24 @@ public:
     QHBoxLayout *horizontalLayout_5;
     QLabel *label_5;
     QLineEdit *Password_lE;
+    QPushButton *SignInBtn_2;
+    QWidget *layoutWidget_2;
+    QVBoxLayout *verticalLayout_2;
+    QHBoxLayout *horizontalLayout_6;
+    QLabel *label_6;
+    QLineEdit *HostName_LE_2;
+    QHBoxLayout *horizontalLayout_7;
+    QLabel *label_7;
+    QLineEdit *Port_LE_2;
+    QHBoxLayout *horizontalLayout_8;
+    QLabel *label_8;
+    QLineEdit *DatabaseName_LE_2;
+    QHBoxLayout *horizontalLayout_9;
+    QLabel *label_9;
+    QLineEdit *UserName_LE_2;
+    QHBoxLayout *horizontalLayout_10;
+    QLabel *label_10;
+    QLineEdit *Password_lE_2;
     QMenuBar *menuBar;
     QToolBar *mainToolBar;
     QStatusBar *statusBar;
@@ -63,10 +81,10 @@ public:
         SignInBtn = new QPushButton(centralWidget);
         SignInBtn->setObjectName(QStringLiteral("SignInBtn"));
         SignInBtn->setGeometry(QRect(300, 290, 93, 28));
-        widget = new QWidget(centralWidget);
-        widget->setObjectName(QStringLiteral("widget"));
-        widget->setGeometry(QRect(120, 130, 278, 145));
-        verticalLayout = new QVBoxLayout(widget);
+        layoutWidget = new QWidget(centralWidget);
+        layoutWidget->setObjectName(QStringLiteral("layoutWidget"));
+        layoutWidget->setGeometry(QRect(120, 130, 278, 145));
+        verticalLayout = new QVBoxLayout(layoutWidget);
         verticalLayout->setSpacing(6);
         verticalLayout->setContentsMargins(11, 11, 11, 11);
         verticalLayout->setObjectName(QStringLiteral("verticalLayout"));
@@ -74,12 +92,12 @@ public:
         horizontalLayout = new QHBoxLayout();
         horizontalLayout->setSpacing(6);
         horizontalLayout->setObjectName(QStringLiteral("horizontalLayout"));
-        label = new QLabel(widget);
+        label = new QLabel(layoutWidget);
         label->setObjectName(QStringLiteral("label"));
 
         horizontalLayout->addWidget(label);
 
-        HostName_LE = new QLineEdit(widget);
+        HostName_LE = new QLineEdit(layoutWidget);
         HostName_LE->setObjectName(QStringLiteral("HostName_LE"));
         HostName_LE->setClearButtonEnabled(true);
 
@@ -91,12 +109,12 @@ public:
         horizontalLayout_2 = new QHBoxLayout();
         horizontalLayout_2->setSpacing(6);
         horizontalLayout_2->setObjectName(QStringLiteral("horizontalLayout_2"));
-        label_2 = new QLabel(widget);
+        label_2 = new QLabel(layoutWidget);
         label_2->setObjectName(QStringLiteral("label_2"));
 
         horizontalLayout_2->addWidget(label_2);
 
-        Port_LE = new QLineEdit(widget);
+        Port_LE = new QLineEdit(layoutWidget);
         Port_LE->setObjectName(QStringLiteral("Port_LE"));
         Port_LE->setClearButtonEnabled(true);
 
@@ -108,12 +126,12 @@ public:
         horizontalLayout_3 = new QHBoxLayout();
         horizontalLayout_3->setSpacing(6);
         horizontalLayout_3->setObjectName(QStringLiteral("horizontalLayout_3"));
-        label_3 = new QLabel(widget);
+        label_3 = new QLabel(layoutWidget);
         label_3->setObjectName(QStringLiteral("label_3"));
 
         horizontalLayout_3->addWidget(label_3);
 
-        DatabaseName_LE = new QLineEdit(widget);
+        DatabaseName_LE = new QLineEdit(layoutWidget);
         DatabaseName_LE->setObjectName(QStringLiteral("DatabaseName_LE"));
         DatabaseName_LE->setClearButtonEnabled(true);
 
@@ -125,12 +143,12 @@ public:
         horizontalLayout_4 = new QHBoxLayout();
         horizontalLayout_4->setSpacing(6);
         horizontalLayout_4->setObjectName(QStringLiteral("horizontalLayout_4"));
-        label_4 = new QLabel(widget);
+        label_4 = new QLabel(layoutWidget);
         label_4->setObjectName(QStringLiteral("label_4"));
 
         horizontalLayout_4->addWidget(label_4);
 
-        UserName_LE = new QLineEdit(widget);
+        UserName_LE = new QLineEdit(layoutWidget);
         UserName_LE->setObjectName(QStringLiteral("UserName_LE"));
         UserName_LE->setEchoMode(QLineEdit::Normal);
         UserName_LE->setClearButtonEnabled(true);
@@ -143,12 +161,12 @@ public:
         horizontalLayout_5 = new QHBoxLayout();
         horizontalLayout_5->setSpacing(6);
         horizontalLayout_5->setObjectName(QStringLiteral("horizontalLayout_5"));
-        label_5 = new QLabel(widget);
+        label_5 = new QLabel(layoutWidget);
         label_5->setObjectName(QStringLiteral("label_5"));
 
         horizontalLayout_5->addWidget(label_5);
 
-        Password_lE = new QLineEdit(widget);
+        Password_lE = new QLineEdit(layoutWidget);
         Password_lE->setObjectName(QStringLiteral("Password_lE"));
         Password_lE->setEchoMode(QLineEdit::Password);
         Password_lE->setClearButtonEnabled(true);
@@ -158,19 +176,109 @@ public:
 
         verticalLayout->addLayout(horizontalLayout_5);
 
+        SignInBtn_2 = new QPushButton(centralWidget);
+        SignInBtn_2->setObjectName(QStringLiteral("SignInBtn_2"));
+        SignInBtn_2->setGeometry(QRect(410, 380, 93, 28));
+        layoutWidget_2 = new QWidget(centralWidget);
+        layoutWidget_2->setObjectName(QStringLiteral("layoutWidget_2"));
+        layoutWidget_2->setGeometry(QRect(230, 220, 278, 145));
+        verticalLayout_2 = new QVBoxLayout(layoutWidget_2);
+        verticalLayout_2->setSpacing(6);
+        verticalLayout_2->setContentsMargins(11, 11, 11, 11);
+        verticalLayout_2->setObjectName(QStringLiteral("verticalLayout_2"));
+        verticalLayout_2->setContentsMargins(0, 0, 0, 0);
+        horizontalLayout_6 = new QHBoxLayout();
+        horizontalLayout_6->setSpacing(6);
+        horizontalLayout_6->setObjectName(QStringLiteral("horizontalLayout_6"));
+        label_6 = new QLabel(layoutWidget_2);
+        label_6->setObjectName(QStringLiteral("label_6"));
+
+        horizontalLayout_6->addWidget(label_6);
+
+        HostName_LE_2 = new QLineEdit(layoutWidget_2);
+        HostName_LE_2->setObjectName(QStringLiteral("HostName_LE_2"));
+        HostName_LE_2->setClearButtonEnabled(true);
+
+        horizontalLayout_6->addWidget(HostName_LE_2);
+
+
+        verticalLayout_2->addLayout(horizontalLayout_6);
+
+        horizontalLayout_7 = new QHBoxLayout();
+        horizontalLayout_7->setSpacing(6);
+        horizontalLayout_7->setObjectName(QStringLiteral("horizontalLayout_7"));
+        label_7 = new QLabel(layoutWidget_2);
+        label_7->setObjectName(QStringLiteral("label_7"));
+
+        horizontalLayout_7->addWidget(label_7);
+
+        Port_LE_2 = new QLineEdit(layoutWidget_2);
+        Port_LE_2->setObjectName(QStringLiteral("Port_LE_2"));
+        Port_LE_2->setClearButtonEnabled(true);
+
+        horizontalLayout_7->addWidget(Port_LE_2);
+
+
+        verticalLayout_2->addLayout(horizontalLayout_7);
+
+        horizontalLayout_8 = new QHBoxLayout();
+        horizontalLayout_8->setSpacing(6);
+        horizontalLayout_8->setObjectName(QStringLiteral("horizontalLayout_8"));
+        label_8 = new QLabel(layoutWidget_2);
+        label_8->setObjectName(QStringLiteral("label_8"));
+
+        horizontalLayout_8->addWidget(label_8);
+
+        DatabaseName_LE_2 = new QLineEdit(layoutWidget_2);
+        DatabaseName_LE_2->setObjectName(QStringLiteral("DatabaseName_LE_2"));
+        DatabaseName_LE_2->setClearButtonEnabled(true);
+
+        horizontalLayout_8->addWidget(DatabaseName_LE_2);
+
+
+        verticalLayout_2->addLayout(horizontalLayout_8);
+
+        horizontalLayout_9 = new QHBoxLayout();
+        horizontalLayout_9->setSpacing(6);
+        horizontalLayout_9->setObjectName(QStringLiteral("horizontalLayout_9"));
+        label_9 = new QLabel(layoutWidget_2);
+        label_9->setObjectName(QStringLiteral("label_9"));
+
+        horizontalLayout_9->addWidget(label_9);
+
+        UserName_LE_2 = new QLineEdit(layoutWidget_2);
+        UserName_LE_2->setObjectName(QStringLiteral("UserName_LE_2"));
+        UserName_LE_2->setEchoMode(QLineEdit::Normal);
+        UserName_LE_2->setClearButtonEnabled(true);
+
+        horizontalLayout_9->addWidget(UserName_LE_2);
+
+
+        verticalLayout_2->addLayout(horizontalLayout_9);
+
+        horizontalLayout_10 = new QHBoxLayout();
+        horizontalLayout_10->setSpacing(6);
+        horizontalLayout_10->setObjectName(QStringLiteral("horizontalLayout_10"));
+        label_10 = new QLabel(layoutWidget_2);
+        label_10->setObjectName(QStringLiteral("label_10"));
+
+        horizontalLayout_10->addWidget(label_10);
+
+        Password_lE_2 = new QLineEdit(layoutWidget_2);
+        Password_lE_2->setObjectName(QStringLiteral("Password_lE_2"));
+        Password_lE_2->setEchoMode(QLineEdit::Password);
+        Password_lE_2->setClearButtonEnabled(true);
+
+        horizontalLayout_10->addWidget(Password_lE_2);
+
+
+        verticalLayout_2->addLayout(horizontalLayout_10);
+
         MainWindow->setCentralWidget(centralWidget);
-        HostName_LE->raise();
-        Port_LE->raise();
-        DatabaseName_LE->raise();
-        UserName_LE->raise();
-        Password_lE->raise();
-        HostName_LE->raise();
-        label->raise();
-        label_2->raise();
-        label_3->raise();
-        label_4->raise();
-        label_5->raise();
+        layoutWidget->raise();
         SignInBtn->raise();
+        SignInBtn_2->raise();
+        layoutWidget_2->raise();
         menuBar = new QMenuBar(MainWindow);
         menuBar->setObjectName(QStringLiteral("menuBar"));
         menuBar->setGeometry(QRect(0, 0, 750, 26));
@@ -196,6 +304,12 @@ public:
         label_3->setText(QApplication::translate("MainWindow", "DatabaseNmae", Q_NULLPTR));
         label_4->setText(QApplication::translate("MainWindow", "UserName", Q_NULLPTR));
         label_5->setText(QApplication::translate("MainWindow", "Password", Q_NULLPTR));
+        SignInBtn_2->setText(QApplication::translate("MainWindow", "\347\231\273\345\275\225", Q_NULLPTR));
+        label_6->setText(QApplication::translate("MainWindow", "HostName", Q_NULLPTR));
+        label_7->setText(QApplication::translate("MainWindow", "Port", Q_NULLPTR));
+        label_8->setText(QApplication::translate("MainWindow", "DatabaseNmae", Q_NULLPTR));
+        label_9->setText(QApplication::translate("MainWindow", "UserName", Q_NULLPTR));
+        label_10->setText(QApplication::translate("MainWindow", "Password", Q_NULLPTR));
     } // retranslateUi
 
 };

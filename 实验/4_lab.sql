@@ -61,3 +61,15 @@ END;
 $$;
 /
 
+DECLARE gpa NUMERIC;
+DECLARE degree CHAR(20);
+
+
+SELECT student.pb20051061
+(
+	5,
+	gpa,
+	degree	--score numeric
+);
+
+dbms_output.put_line(v_num);

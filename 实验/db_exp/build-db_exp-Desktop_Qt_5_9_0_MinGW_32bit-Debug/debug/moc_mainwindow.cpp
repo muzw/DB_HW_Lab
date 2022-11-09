@@ -6,7 +6,7 @@
 ** WARNING! All changes made in this file will be lost!
 *****************************************************************************/
 
-#include "../../dbapplication/mainwindow.h"
+#include "../../db_exp/mainwindow.h"
 #include <QtCore/qbytearray.h>
 #include <QtCore/qmetatype.h>
 #if !defined(Q_MOC_OUTPUT_REVISION)
@@ -22,7 +22,7 @@ QT_WARNING_PUSH
 QT_WARNING_DISABLE_DEPRECATED
 struct qt_meta_stringdata_MainWindow_t {
     QByteArrayData data[4];
-    char stringdata0[41];
+    char stringdata0[50];
 };
 #define QT_MOC_LITERAL(idx, ofs, len) \
     Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
@@ -32,13 +32,13 @@ struct qt_meta_stringdata_MainWindow_t {
 static const qt_meta_stringdata_MainWindow_t qt_meta_stringdata_MainWindow = {
     {
 QT_MOC_LITERAL(0, 0, 10), // "MainWindow"
-QT_MOC_LITERAL(1, 11, 20), // "on_SignInBtn_clicked"
-QT_MOC_LITERAL(2, 32, 0), // ""
-QT_MOC_LITERAL(3, 33, 7) // "checked"
+QT_MOC_LITERAL(1, 11, 19), // "on_CloseBtn_clicked"
+QT_MOC_LITERAL(2, 31, 0), // ""
+QT_MOC_LITERAL(3, 32, 17) // "on_RunBtn_clicked"
 
     },
-    "MainWindow\0on_SignInBtn_clicked\0\0"
-    "checked"
+    "MainWindow\0on_CloseBtn_clicked\0\0"
+    "on_RunBtn_clicked"
 };
 #undef QT_MOC_LITERAL
 
@@ -56,12 +56,12 @@ static const uint qt_meta_data_MainWindow[] = {
        0,       // signalCount
 
  // slots: name, argc, parameters, tag, flags
-       1,    0,   24,    2, 0x0a /* Public */,
-       1,    1,   25,    2, 0x0a /* Public */,
+       1,    0,   24,    2, 0x08 /* Private */,
+       3,    0,   25,    2, 0x08 /* Private */,
 
  // slots: parameters
     QMetaType::Void,
-    QMetaType::Void, QMetaType::Bool,    3,
+    QMetaType::Void,
 
        0        // eod
 };
@@ -72,11 +72,12 @@ void MainWindow::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, 
         MainWindow *_t = static_cast<MainWindow *>(_o);
         Q_UNUSED(_t)
         switch (_id) {
-        case 0: _t->on_SignInBtn_clicked(); break;
-        case 1: _t->on_SignInBtn_clicked((*reinterpret_cast< bool(*)>(_a[1]))); break;
+        case 0: _t->on_CloseBtn_clicked(); break;
+        case 1: _t->on_RunBtn_clicked(); break;
         default: ;
         }
     }
+    Q_UNUSED(_a);
 }
 
 const QMetaObject MainWindow::staticMetaObject = {

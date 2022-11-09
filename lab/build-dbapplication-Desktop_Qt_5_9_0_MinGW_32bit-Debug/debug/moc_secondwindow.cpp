@@ -1,16 +1,16 @@
 /****************************************************************************
-** Meta object code from reading C++ file 'mainwindow.h'
+** Meta object code from reading C++ file 'secondwindow.h'
 **
 ** Created by: The Qt Meta Object Compiler version 67 (Qt 5.9.0)
 **
 ** WARNING! All changes made in this file will be lost!
 *****************************************************************************/
 
-#include "../../dbapplication/mainwindow.h"
+#include "../../dbapplication/secondwindow.h"
 #include <QtCore/qbytearray.h>
 #include <QtCore/qmetatype.h>
 #if !defined(Q_MOC_OUTPUT_REVISION)
-#error "The header file 'mainwindow.h' doesn't include <QObject>."
+#error "The header file 'secondwindow.h' doesn't include <QObject>."
 #elif Q_MOC_OUTPUT_REVISION != 67
 #error "This file was generated using the moc from 5.9.0. It"
 #error "cannot be used with the include files from this version of Qt."
@@ -20,29 +20,29 @@
 QT_BEGIN_MOC_NAMESPACE
 QT_WARNING_PUSH
 QT_WARNING_DISABLE_DEPRECATED
-struct qt_meta_stringdata_MainWindow_t {
+struct qt_meta_stringdata_secondwindow_t {
     QByteArrayData data[4];
-    char stringdata0[41];
+    char stringdata0[58];
 };
 #define QT_MOC_LITERAL(idx, ofs, len) \
     Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
-    qptrdiff(offsetof(qt_meta_stringdata_MainWindow_t, stringdata0) + ofs \
+    qptrdiff(offsetof(qt_meta_stringdata_secondwindow_t, stringdata0) + ofs \
         - idx * sizeof(QByteArrayData)) \
     )
-static const qt_meta_stringdata_MainWindow_t qt_meta_stringdata_MainWindow = {
+static const qt_meta_stringdata_secondwindow_t qt_meta_stringdata_secondwindow = {
     {
-QT_MOC_LITERAL(0, 0, 10), // "MainWindow"
-QT_MOC_LITERAL(1, 11, 20), // "on_SignInBtn_clicked"
-QT_MOC_LITERAL(2, 32, 0), // ""
-QT_MOC_LITERAL(3, 33, 7) // "checked"
+QT_MOC_LITERAL(0, 0, 12), // "secondwindow"
+QT_MOC_LITERAL(1, 13, 21), // "on_pushButton_clicked"
+QT_MOC_LITERAL(2, 35, 0), // ""
+QT_MOC_LITERAL(3, 36, 21) // "on_executeBtn_clicked"
 
     },
-    "MainWindow\0on_SignInBtn_clicked\0\0"
-    "checked"
+    "secondwindow\0on_pushButton_clicked\0\0"
+    "on_executeBtn_clicked"
 };
 #undef QT_MOC_LITERAL
 
-static const uint qt_meta_data_MainWindow[] = {
+static const uint qt_meta_data_secondwindow[] = {
 
  // content:
        7,       // revision
@@ -57,48 +57,49 @@ static const uint qt_meta_data_MainWindow[] = {
 
  // slots: name, argc, parameters, tag, flags
        1,    0,   24,    2, 0x0a /* Public */,
-       1,    1,   25,    2, 0x0a /* Public */,
+       3,    0,   25,    2, 0x08 /* Private */,
 
  // slots: parameters
     QMetaType::Void,
-    QMetaType::Void, QMetaType::Bool,    3,
+    QMetaType::Void,
 
        0        // eod
 };
 
-void MainWindow::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void **_a)
+void secondwindow::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void **_a)
 {
     if (_c == QMetaObject::InvokeMetaMethod) {
-        MainWindow *_t = static_cast<MainWindow *>(_o);
+        secondwindow *_t = static_cast<secondwindow *>(_o);
         Q_UNUSED(_t)
         switch (_id) {
-        case 0: _t->on_SignInBtn_clicked(); break;
-        case 1: _t->on_SignInBtn_clicked((*reinterpret_cast< bool(*)>(_a[1]))); break;
+        case 0: _t->on_pushButton_clicked(); break;
+        case 1: _t->on_executeBtn_clicked(); break;
         default: ;
         }
     }
+    Q_UNUSED(_a);
 }
 
-const QMetaObject MainWindow::staticMetaObject = {
-    { &QMainWindow::staticMetaObject, qt_meta_stringdata_MainWindow.data,
-      qt_meta_data_MainWindow,  qt_static_metacall, nullptr, nullptr}
+const QMetaObject secondwindow::staticMetaObject = {
+    { &QMainWindow::staticMetaObject, qt_meta_stringdata_secondwindow.data,
+      qt_meta_data_secondwindow,  qt_static_metacall, nullptr, nullptr}
 };
 
 
-const QMetaObject *MainWindow::metaObject() const
+const QMetaObject *secondwindow::metaObject() const
 {
     return QObject::d_ptr->metaObject ? QObject::d_ptr->dynamicMetaObject() : &staticMetaObject;
 }
 
-void *MainWindow::qt_metacast(const char *_clname)
+void *secondwindow::qt_metacast(const char *_clname)
 {
     if (!_clname) return nullptr;
-    if (!strcmp(_clname, qt_meta_stringdata_MainWindow.stringdata0))
-        return static_cast<void*>(const_cast< MainWindow*>(this));
+    if (!strcmp(_clname, qt_meta_stringdata_secondwindow.stringdata0))
+        return static_cast<void*>(const_cast< secondwindow*>(this));
     return QMainWindow::qt_metacast(_clname);
 }
 
-int MainWindow::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
+int secondwindow::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
 {
     _id = QMainWindow::qt_metacall(_c, _id, _a);
     if (_id < 0)
